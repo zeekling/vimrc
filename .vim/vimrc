@@ -1,0 +1,130 @@
+"              ____________      __
+"             / ____/ ____/     / /_
+"    _____   / /___/ /_____    / /_/     __ _______
+"   /__  /  / ____/ ____/ /___/ / /\    / / __    /
+"     / /__/ /___/ /___/ / __/ / /\ \  / / /_/ / /
+"    /____/_____/_____/_/\_\/_/_/  \_\/_/\____/ /
+"                                       _____/ /
+"                                      /______/
+"       @author:zeekling<zeekling@163.com>
+"
+
+" 插件
+filetype off                    " required!
+filetype indent on
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive', {'on': 'LoadPlugs'}
+Plug 'ascenator/L9', {'name': 'newL9','for':'vim'}
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin', {'on': 'LoadPlugs'}
+Plug 'majutsushi/tagbar',{'for':['java','sql','python','c','html','css','javascript','go']}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+" Plug 'terryma/vim-multiple-cursors'
+" Plug 'powerline/fonts'
+if v:version < 800
+	Plug 'scrooloose/syntastic',{'for':['java','sql','python','c','html','css','javascript']}
+else
+	Plug 'w0rp/ale',{'for':['java','sql','python','c','html','css','javascript','go','sh','shell'], 'merged' : 0, 'loadconf_before' : 1} " 语法检测
+endif
+Plug 'godlygeek/tabular' ,{'on':'Tabbar'} " 代码美化工具
+Plug 'jiangmiao/auto-pairs'
+" Plug 'kien/rainbow_parentheses.vim'
+" Plug 'roxma/vim-paste-easy' " Easy paste
+"Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tacahiroy/ctrlp-funky'
+" Plug 'rking/ag.vim'
+Plug 'haya14busa/incsearch.vim'
+" Plug 'Raimondi/delimitMate'
+" Plug 'morhetz/gruvbox'
+Plug 'mhinz/vim-signify'
+Plug 'terryma/vim-smooth-scroll'
+Plug 'mhinz/vim-startify'
+" Plug 'rodjek/vim-puppet'
+Plug 'tpope/vim-fugitive', {'on': 'LoadPlugs'}
+Plug 'will133/vim-dirdiff',{'on':['DirDiff']}
+Plug 'Chiel92/vim-autoformat', {'on': 'Autoformat'}
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets' ,{'for':['java','sql','python','c','html','css','javascript']}
+" Plug 'godlygeek/tabular'
+" Plug 'mbbill/undotree'
+" Plug 'romainl/vim-cool'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'ryanoasis/vim-devicons'
+" Plug 'Raimondi/delimitMate'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+" 自动补全html/xml标签
+Plug 'docunext/closetag.vim', { 'for': ['html', 'xml'] }
+Plug 'mattn/emmet-vim',{'for':['html','xml']}
+Plug 'gko/vim-coloresque' ,{'for':['html','xml','css',]}
+Plug 'pangloss/vim-javascript',{'for':['html','css','javascript']}
+Plug 'hail2u/vim-css3-syntax',{'for':['html','css','javascript']}
+" 快速赋值语句对齐
+Plug 'junegunn/vim-easy-align',{'for':['java','c','python','markdown','sh','shell','c++','sql']}
+" quickrun
+Plug 'thinca/vim-quickrun',{'for':['java','c','python','sh','shell','c++']}
+
+Plug 'chrisbra/changesPlugin'
+
+" auto complete
+"Plug 'SirVer/ultisnips',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+"Plug 'honza/vim-snippets',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+Plug 'ycm-core/YouCompleteMe',{'do':'./install.py --clang-completer --java-completer','for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+" Plug 'maralla/completor.vim',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+Plug 'shougo/neocomplete.vim',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+" java
+Plug 'artur-shaik/vim-javacomplete2', {'for':'java'}
+Plug 'mrtazz/DoxygenToolkit.vim', {'for':['java','c','c++']}
+Plug 'airblade/vim-rooter', {'for':'java'}
+
+" c
+Plug 'vim-scripts/a.vim', {'for':['c','c++']}
+Plug 'vim-scripts/c.vim', {'for':['c','c++']}
+
+" markdown
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'iamcco/mathjax-support-for-mkdp', { 'for': 'markdown' }
+Plug 'iamcco/markdown-preview.vim', { 'for': 'markdown' }
+
+" python
+" Plug 'rkulla/pydiction', { 'for': 'python'  }
+" Plug 'hdima/python-syntax', { 'for': 'python'  }
+" Plug 'hynek/vim-python-pep8-indent', { 'for': 'python'  }
+" Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python'  }
+"Plug 'davidhalter/jedi-vim', { 'for': 'python'  }
+Plug 'python-mode/python-mode', { 'for': 'python','branch': 'develop' }
+Plug 'tell-k/vim-autopep8', {'for': 'python'}
+" Plug 'fisadev/vim-isort',{'for':'python'}
+" sql
+" Plug 'joereynolds/SQHell.vim',{'for':'sql'}
+
+" on 语句不起作用
+Plug 'mattn/vim-sqlfmt',{'on':'SQLfmt'}
+" bash
+Plug 'vim-scripts/bash-support.vim',{'for':['sh','bash']}
+
+Plug 'chxuan/prepare-code'
+call plug#end()
+
+autocmd FileType java source ~/.vim/conf/java.vim
+autocmd FileType c source ~/.vim/conf/c.vim
+autocmd FileType python source ~/.vim/conf/python.vim
+autocmd BufNewFile,BufRead *.md,*.markdown,*.mkd source ~/.vim/conf/markdown.vim
+autocmd FileType sql source ~/.vim/conf/sql.vim
+autocmd FileType html,css,javascript source ~/.vim/conf/html.vim
+
+if filereadable(expand("~/.vim/conf/load.vim"))
+	source ~/.vim/conf/load.vim
+endif
+
+if filereadable(expand('~/.vim/conf/base.vim'))
+	source ~/.vim/conf/base.vim
+endif
+
+filetype plugin indent on
+
+
+if filereadable(expand('~/.vim/custom/functions.vim'))
+	source ~/.vim/custom/functions.vim
+endif
