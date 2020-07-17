@@ -22,7 +22,7 @@ apt install ctags cmake make build-essential python-dev python3-dev
 `redhat` 系列可以找到相同的包安装即可，其他相同
 2. 克隆项目到本地
 ```sh
-git clone git@www.zeekling.cn:linux/vimrc.git
+git clone ssh://git@git.zeekling.cn:222/linux/vimrc.git
 ```
 3. 执行安装脚本
 ```sh
