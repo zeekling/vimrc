@@ -1,4 +1,5 @@
-let g:airline_powerline_fonts = 1
+
+set encoding=utf8
 
 " scrooloose/nerdtree
 let NERDTreeWinPos='left'
@@ -39,7 +40,7 @@ let g:airline#symbols = {}
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set t_Co=256
-let g:airline_theme="badwolf"
+let g:airline_theme="dark_minimal"
 let g:airline_symbols = {}
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
@@ -186,6 +187,7 @@ let g:startify_custom_header=[
 let g:startify_custom_footer=['结尾', '    不想看到你']
 " ryanoasis/vim-devicons
 let g:webdevicons_enable_nerdtree = 1 " 我的电脑上显示有点问题
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 
 let g:prepare_code_plugin_path = expand($HOME . "/.vim/plugged/prepare-code")
 set cc=120

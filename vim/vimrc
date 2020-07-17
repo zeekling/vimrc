@@ -20,7 +20,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 " Plug 'terryma/vim-multiple-cursors'
-" Plug 'powerline/fonts'
+Plug 'powerline/fonts',{'do':'./install.sh'}
 if v:version < 800
 	Plug 'scrooloose/syntastic',{'for':['java','sql','python','c','html','css','javascript']}
 else
@@ -35,7 +35,7 @@ Plug 'tacahiroy/ctrlp-funky'
 " Plug 'rking/ag.vim'
 Plug 'haya14busa/incsearch.vim'
 " Plug 'Raimondi/delimitMate'
-" Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 Plug 'mhinz/vim-signify'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'mhinz/vim-startify'
