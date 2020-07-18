@@ -104,8 +104,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-if !empty(glob("~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"))
-	let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+if !empty(glob("~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py"))
+	let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 endif
 let g:ycm_server_keep_logfiles = 1
 ":imap <S-tab> <c-x><c-o>
