@@ -32,7 +32,7 @@ let g:NERDTreeIndicatorMapCustom = {
 " majutsushi/tagbar
 let g:tagbar_width=35
 nmap <F8> :TagbarToggle<CR>
-autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.java,*.py,*.js,*.sql call tagbar#autoopen()
+autocmd BufReadPost *.cpp,*.c,*.hpp,*.cpp,*.cxx,*.java,*.py,*.js,*.sql call tagbar#autoopen()
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 
 " vim-airline/vim-airline
