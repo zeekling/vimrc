@@ -44,12 +44,15 @@ cd vim
 --enable-multibyte \
 --with-x \
 --with-compiledby="xorpd" \
---with-python3-config-dir=/usr/lib/python3.4/config-3.4m-x86_64-linux-gnu \
---prefix=/opt/vim74
+--with-python3-config-dir=/usr/lib/python3.9/config-3.9m-x86_64-linux-gnu \
+--prefix=/opt/vim82
 
 make
 sudo make install
 ```
+在`~/.zshrc`中添加下面内容即可：
+```bash
+VIM_HOME=/opt/vim82
+export PATH=$PATH:$VIM_HOME/bin
+```
 
----------
-跟新时间：2017-07-04
