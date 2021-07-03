@@ -10,6 +10,7 @@ echo " "
 echo "       @author:zeekling<zeekling@zeekling.cn>       "
 echo "                                                    "
 echo "开始安装vim-plug"
+mkdir -p ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "安装vim-plug完成"
 
