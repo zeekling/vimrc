@@ -64,7 +64,7 @@ Plug 'junegunn/vim-easy-align',{'for':['java','c','python','markdown','sh','shel
 Plug 'thinca/vim-quickrun',{'for':['java','c','python','sh','shell','c++']}
 
 " auto complete
-Plug 'Valloric/YouCompleteMe',{'do':'./install.py --clang-completer --clang-completer','for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+Plug 'Valloric/YouCompleteMe',{'do':'./install.py --clang-completer --java-completer','for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
 " Plug 'maralla/completor.vim',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
 Plug 'SirVer/ultisnips',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
 Plug 'honza/vim-snippets',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
@@ -89,7 +89,7 @@ Plug 'iamcco/markdown-preview.vim', { 'for': 'markdown' }
 " Plug 'hynek/vim-python-pep8-indent', { 'for': 'python'  }
 " Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python'  }
 " Plug 'davidhalter/jedi-vim', { 'for': 'python'  }
-Plug 'python-mode/python-mode', { 'for': 'python','branch': 'develop' }
+" Plug 'python-mode/python-mode', { 'for': 'python','branch': 'develop' }
 Plug 'tell-k/vim-autopep8', {'for': 'python'}
 " Plug 'fisadev/vim-isort',{'for':'python'}
 " sql
