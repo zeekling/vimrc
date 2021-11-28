@@ -32,20 +32,8 @@ sudo apt remove vim --purge
 git clone https://github.com/vim/vim.git
 cd vim
 
-./configure \
---enable-perlinterp \
---enable-python3interp \
---enable-rubyinterp \
---enable-cscope \
---enable-gui=auto \
---enable-gtk2-check \
---enable-gnome-check \
---with-features=huge \
---enable-multibyte \
---with-x \
---with-compiledby="xorpd" \
---with-python3-config-dir=/usr/lib/python3.9/config-3.9m-x86_64-linux-gnu \
---prefix=/opt/vim82
+./configure
+ --with-features=huge --enable-multibyte --enable-pythoninterp=dynamic --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu --enable-python3interp=dynamic --with-python3-config-dir=/usr/lib/python3.9/config-3.9-x86_64-linux-gnu --enable-cscope --enable-gui=auto --enable-gtk2-check --enable-fontset --enable-largefile --disable-netbeans --with-compiledby="lingzhaohui@zeekling.cn" --enable-fail-if-missing --prefix=/home/zeekling/software/vim8.2
 
 make
 sudo make install

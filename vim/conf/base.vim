@@ -16,18 +16,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeT
 "map <leader>n  :NERDTreeToggle<CR>
 map <leader><F9> :NERDTreeToggle<CR>
 
-" Xuyuanp/nerdtree-git-plugin
-let g:NERDTreeIndicatorMapCustom = {
-			\ "Modified"  : "✹",
-			\ "Staged"    : "✚",
-			\ "Untracked" : "✭",
-			\ "Renamed"   : "➜",
-			\ "Unmerged"  : "═",
-			\ "Deleted"   : "✖",
-			\ "Dirty"     : "✗",
-			\ "Clean"     : "✔︎",
-			\ "Unknown"   : "?"
-			\ }
 
 " majutsushi/tagbar
 let g:tagbar_width=35
