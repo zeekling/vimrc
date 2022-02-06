@@ -57,14 +57,14 @@ Plug 'docunext/closetag.vim', { 'for': ['html', 'xml'] }
 Plug 'mattn/emmet-vim',{'for':['html','xml']}
 Plug 'gko/vim-coloresque' ,{'for':['html','xml','css',]}
 Plug 'pangloss/vim-javascript',{'for':['html','css','javascript']}
-Plug 'hail2u/vim-css3-syntax',{'for':['html','css','javascript']}
+" Plug 'hail2u/vim-css3-syntax',{'for':['html','css','javascript']}
 " 快速赋值语句对齐
 Plug 'junegunn/vim-easy-align',{'for':['java','c','python','markdown','sh','shell','c++','sql']}
 " quickrun
 Plug 'thinca/vim-quickrun',{'for':['java','c','python','sh','shell','c++']}
 
 " auto complete
-Plug 'Valloric/YouCompleteMe',{'do':'./install.py --clang-completer --java-completer','for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
+" Plug 'Valloric/YouCompleteMe',{'do':'./install.py --clang-completer --java-completer','for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
 " Plug 'maralla/completor.vim',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
 Plug 'SirVer/ultisnips',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
 Plug 'honza/vim-snippets',{'for':['java','sql','vim','python','c','html','css','javascript','sh','shell']}
